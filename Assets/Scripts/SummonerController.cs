@@ -10,6 +10,7 @@ public class SummonerController : MonoBehaviour
 
     private float summonTimer = SUMMON_TIME;
     private Vector3 demonSpawnPos;
+    private int summonCount = 0;
 
     private Animator animator;
 
@@ -35,9 +36,10 @@ public class SummonerController : MonoBehaviour
         summonTimer -= Time.deltaTime;
 
         if (summonTimer <= 0) {
+            summonCount++;
             GameObject inst = Instantiate(demonPrefab, demonSpawnPos, Quaternion.identity);
 
-            summonTimer = SUMMON_TIME + 1f;     // off set for demon rising animation
+            summonTimer = SUMMON_TIME + (1f * summonCount);
         }
     }
 
