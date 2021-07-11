@@ -123,32 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &292760999 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 999389736491147170, guid: 7d37195b73451784e8fa27220c0cd009, type: 3}
-  m_PrefabInstance: {fileID: 999389736207053317}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &292761005
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 292760999}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1001 &385255271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2024,21 +1998,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Summoner
       objectReference: {fileID: 0}
-    - target: {fileID: 999389736491147180, guid: 7d37195b73451784e8fa27220c0cd009, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 999389736491147180, guid: 7d37195b73451784e8fa27220c0cd009, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 999389736491147183, guid: 7d37195b73451784e8fa27220c0cd009, type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 999389736491147183, guid: 7d37195b73451784e8fa27220c0cd009, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 999389736491147183, guid: 7d37195b73451784e8fa27220c0cd009, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2150,22 +2112,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 965896137, guid: 6526d7ad9aaf39045aaa408086041039, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 965896137, guid: 6526d7ad9aaf39045aaa408086041039, type: 3}
-      propertyPath: m_TagString
-      value: SlapDetect
-      objectReference: {fileID: 0}
-    - target: {fileID: 965896139, guid: 6526d7ad9aaf39045aaa408086041039, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7860838655957585493, guid: 6526d7ad9aaf39045aaa408086041039, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7860838655957585494, guid: 6526d7ad9aaf39045aaa408086041039, type: 3}
       propertyPath: m_RootOrder
       value: 2
