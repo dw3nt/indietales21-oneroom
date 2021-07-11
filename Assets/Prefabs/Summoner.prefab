@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 999389736491147180}
   - component: {fileID: 999389736491147181}
   - component: {fileID: 999389736491147182}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Summoner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1670784371
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 198331995128741714, guid: 79da7c874bec0864e9bbf4da637d6e6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 999389737723673518}
   - component: {fileID: 999389737723673519}
   - component: {fileID: 999389737723673516}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SummonCircle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,8 +186,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 263489383
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 4012829480356420361, guid: 3afcb4ffcbe40c24a9936775a387d5e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

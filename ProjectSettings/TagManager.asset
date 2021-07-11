@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Demon
+  - Summoner
+  - Wall
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 1605725853
+    locked: 0
+  - name: SummonCircle
+    uniqueID: 263489383
+    locked: 0
+  - name: Characters
+    uniqueID: 2624182925
     locked: 0
