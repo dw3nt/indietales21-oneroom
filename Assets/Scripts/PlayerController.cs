@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour
     float idleTimer;
     float maxIdleTimer;
 
-    Vector2 moveDir = Vector2.zero;
+    private Vector2 moveDir = Vector2.zero;
+    private bool canMove = true;
 
     private Animator anim;
     private Rigidbody2D body;
@@ -31,8 +32,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        HandleMoveInput();
-        TickBlinkTimer();
+        if (canMove) {
+            HandleMoveInput();
+            TickBlinkTimer();
+        }
     }
 
     void FixedUpdate()
@@ -83,8 +86,8 @@ public class PlayerController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.gameObject.CompareTag("Demon")) {
-            // pause game
-            // play death animation
+            canMove = false;
+            anim.SetTrigger("isDead");
             // play death sound
             // switch scene to retry
         }

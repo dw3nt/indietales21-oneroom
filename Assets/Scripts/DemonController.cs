@@ -29,11 +29,15 @@ public class DemonController : MonoBehaviour
 
     void Update()
     {
-        if (isSummoned) {
-            ChaseTarget();
-        }
+        if (target) {
+            if (isSummoned) {
+                ChaseTarget();
+            }
 
-        FaceTarget();
+            FaceTarget();
+        } else {
+            moveDir = Vector2.zero;
+        }
     }
 
     void FixedUpdate()
