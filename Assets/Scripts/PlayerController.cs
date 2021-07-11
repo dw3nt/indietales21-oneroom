@@ -79,4 +79,14 @@ public class PlayerController : MonoBehaviour
             idleTimer = maxIdleTimer;
         } 
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.CompareTag("Demon")) {
+            // pause game
+            // play death animation
+            // play death sound
+            // switch scene to retry
+        }
+    }
 }

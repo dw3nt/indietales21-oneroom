@@ -11,15 +11,23 @@ public class SummonerController : MonoBehaviour
     private float summonTimer = SUMMON_TIME;
     private Vector3 demonSpawnPos;
 
+    private Animator animator;
+
+    public bool canSummon = true;
+
     void Awake()
     {
+        animator = GetComponent<Animator>();
+
         demonSpawnPos = transform.GetChild(0).transform.position;
         demonSpawnPos.y += 0.5f;
     }
 
     void Update()
     {
-        TickSummonTime();
+        if (canSummon) {
+            TickSummonTime();
+        }
     }
 
     void TickSummonTime()
@@ -30,6 +38,14 @@ public class SummonerController : MonoBehaviour
             GameObject inst = Instantiate(demonPrefab, demonSpawnPos, Quaternion.identity);
 
             summonTimer = SUMMON_TIME + 1f;     // off set for demon rising animation
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.CompareTag("SlapDetect")) {
+            animator.SetBool("isSlapped", true);
+            // play noise
         }
     }
 }
