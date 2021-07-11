@@ -88,6 +88,7 @@ public class PlayerController : MonoBehaviour
         if (collision.collider.gameObject.CompareTag("Demon")) {
             canMove = false;
             anim.SetTrigger("isDead");
+            moveDir = Vector2.zero;
             // play death sound
             // switch scene to retry
         }
