@@ -13,15 +13,22 @@ public class SummonerController : MonoBehaviour
     private int summonCount = 0;
 
     private Animator animator;
+    private SpriteRenderer sprite;
 
     public bool canSummon = true;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
 
         demonSpawnPos = transform.GetChild(0).transform.position;
         demonSpawnPos.y += 0.5f;
+
+        if (Random.Range(0f, 1f) < 0.5f) {
+            transform.localScale = new Vector3(-1f, 1f, 1);
+            demonSpawnPos.x -= 2;
+        }
     }
 
     void Update()

@@ -36,11 +36,6 @@ public class SummonerSpawnerController : MonoBehaviour
             );
 
             GameObject inst = Instantiate(summonerPrefab, spawnPos, Quaternion.identity);
-
-            if (Random.Range(0f, 1f) > 0.5f) {
-                Debug.Log("flip");
-                inst.transform.localScale = new Vector3(-1, 1, 0);
-            }
         }
     }
 }

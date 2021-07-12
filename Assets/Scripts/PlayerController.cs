@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour
             anim.SetTrigger("isDead");
             moveDir = Vector2.zero;
             // play death sound
-            // switch scene to retry
+            // switch scene to retry or main menu
         }
     }
 }
